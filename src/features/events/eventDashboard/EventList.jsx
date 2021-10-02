@@ -5,9 +5,9 @@ const EventList = ({ events, selectEvent, deleteEvent }) => {
     <>
       {events.map((event) => (
         <EventListItem
+          key={event.id}
           deleteEvent={deleteEvent}
           event={event}
-          key={event.id}
           selectEvent={selectEvent}
         />
       ))}
